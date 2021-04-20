@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.0.min.js" integrity="sha384-HjagQp6T0/7bxYTAXbLotF1MLAGWmhkY5siA1Gc/pcEgvgRPtMsRn0gQtMwGKiw1" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="2c003038-0062-480b-9608-de7f19860769" data-root-id="1003"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1249">
+          {"bd4836e8-4d48-466d-9d39-bc29b982bcc5":{"defs":[{"extends":null,"module":null,"name":"DataModel","overrides":[],"properties":[]}],"roots":{"references":[{"attributes":{},"id":"1050","type":"BasicTickFormatter"},{"attributes":{"label":{"field":"Country"},"renderers":[{"id":"1042"}]},"id":"1055","type":"LegendItem"},{"attributes":{"callback":null,"tooltips":"\n  &lt;div&gt;\n    &lt;h3&gt;@Country&lt;/h3&gt;\n    &lt;div&gt;&lt;strong&gt;Population: &lt;/strong&gt;@Population&lt;/div&gt;\n    &lt;div&gt;&lt;strong&gt;Cases: &lt;/strong&gt;@Cases&lt;/div&gt;\n    &lt;div&gt;&lt;strong&gt;Recovered: &lt;/strong&gt;@Recovered&lt;/div&gt;\n    &lt;div&gt;&lt;img src=\"@Image\" alt=\"@Image\" width=\"200\" /&gt;&lt;/div&gt;\n  &lt;/div&gt;\n"},"id":"1056","type":"HoverTool"},{"attributes":{"below":[{"id":"1014"}],"center":[{"id":"1017"},{"id":"1021"},{"id":"1054"}],"height":350,"left":[{"id":"1018"}],"renderers":[{"id":"1042"}],"title":{"id":"1004"},"toolbar":{"id":"1029"},"x_range":{"id":"1006"},"x_scale":{"id":"1010"},"y_range":{"id":"1008"},"y_scale":{"id":"1012"}},"id":"1003","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1025","type":"ZoomOutTool"},{"attributes":{},"id":"1049","type":"AllLabels"},{"attributes":{"source":{"id":"1038"}},"id":"1043","type":"CDSView"},{"attributes":{"data_source":{"id":"1038"},"glyph":{"id":"1040"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1041"},"view":{"id":"1043"}},"id":"1042","type":"GlyphRenderer"},{"attributes":{"end_angle":{"expr":{"id":"1037"}},"fill_alpha":{"value":0.1},"fill_color":{"field":"color"},"line_alpha":{"value":0.1},"radius":{"value":0.4},"start_angle":{"expr":{"id":"1036"}},"x":{"value":0},"y":{"value":1}},"id":"1041","type":"Wedge"},{"attributes":{"axis_label":null,"formatter":{"id":"1047"},"major_label_policy":{"id":"1046"},"ticker":{"id":"1019"},"visible":false},"id":"1018","type":"LinearAxis"},{"attributes":{"items":[{"id":"1055"}]},"id":"1054","type":"Legend"},{"attributes":{"end_angle":{"expr":{"id":"1037"}},"fill_color":{"field":"color"},"radius":{"value":0.4},"start_angle":{"expr":{"id":"1036"}},"x":{"value":0},"y":{"value":1}},"id":"1040","type":"Wedge"},{"attributes":{},"id":"1015","type":"BasicTicker"},{"attributes":{},"id":"1006","type":"DataRange1d"},{"attributes":{},"id":"1012","type":"LinearScale"},{"attributes":{},"id":"1051","type":"UnionRenderers"},{"attributes":{},"id":"1052","type":"Selection"},{"attributes":{"axis":{"id":"1014"},"grid_line_color":null,"ticker":null},"id":"1017","type":"Grid"},{"attributes":{"axis_label":null,"formatter":{"id":"1050"},"major_label_policy":{"id":"1049"},"ticker":{"id":"1015"},"visible":false},"id":"1014","type":"LinearAxis"},{"attributes":{"active_multi":null,"tools":[{"id":"1022"},{"id":"1023"},{"id":"1024"},{"id":"1025"},{"id":"1026"},{"id":"1027"},{"id":"1056"}]},"id":"1029","type":"Toolbar"},{"attributes":{},"id":"1010","type":"LinearScale"},{"attributes":{"text":"COVID-19 Recoveries Worldwide Statistics"},"id":"1004","type":"Title"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"1028","type":"BoxAnnotation"},{"attributes":{"axis":{"id":"1018"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"1021","type":"Grid"},{"attributes":{},"id":"1019","type":"BasicTicker"},{"attributes":{"field":"angle","include_zero":true},"id":"1036","type":"CumSum"},{"attributes":{"overlay":{"id":"1028"}},"id":"1023","type":"BoxSelectTool"},{"attributes":{},"id":"1008","type":"DataRange1d"},{"attributes":{"data":{"Cases":["2.3M","12.5M","2.38M","2.78M","12M","3.51M","2.22M","4.46M","3.21M"],"Country":["Argentina","Brazil","Colombia","Germany","India","Italy","Poland","Russia","Turkey"],"Image":["https://images-na.ssl-images-amazon.com/images/I/31gh5ro1mEL._AC_SX466_.jpg","https://www.nationalflags.shop/WebRoot/vilkasfi01/Shops/2014080403/53E6/2F4E/F123/7D8D/CCB0/0A28/100B/04B4/Flag_of_Brazil_ml.png","https://pixnio.com/free-images/flags-of-the-world/flag-of-colombia.jpg","https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png","https://images-na.ssl-images-amazon.com/images/I/31hUa4vD7aL._AC_SX466_.jpg","https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1200px-Flag_of_Italy.svg.png","https://cdn.britannica.com/52/3552-004-D849A1D3/Flag-Poland.jpg","https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg","https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png"],"Population":["44.94M","211M","50.34M","83.02M","1.36B","60.36M","37.97M","144M","82M"],"Recovered":[2343875,12278980,2450392,2760000,12700000,3220000,2260000,4260000,3640000],"angle":{"__ndarray__":"lKkP4UiH1D9hc0GLyOL6P0EAJTYcdtU/jFNFD0ss2D+Hx1WBx877P802JuesM9w/Q0ZywDnL0z+xPd99v6fiPwrwFEhf4d8/","dtype":"float64","order":"little","shape":[9]},"color":["#3288bd","#66c2a5","#abdda4","#e6f598","#ffffbf","#fee08b","#fdae61","#f46d43","#d53e4f"],"index":[0,1,2,3,4,5,6,7,8],"value":[1,1,1,1,1,1,1,1,1]},"selected":{"id":"1052"},"selection_policy":{"id":"1051"}},"id":"1038","type":"ColumnDataSource"},{"attributes":{},"id":"1022","type":"PanTool"},{"attributes":{},"id":"1024","type":"ZoomInTool"},{"attributes":{},"id":"1026","type":"SaveTool"},{"attributes":{"field":"angle"},"id":"1037","type":"CumSum"},{"attributes":{},"id":"1027","type":"ResetTool"},{"attributes":{},"id":"1046","type":"AllLabels"},{"attributes":{},"id":"1047","type":"BasicTickFormatter"}],"root_ids":["1003"]},"title":"Bokeh Application","version":"2.3.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1249').textContent;
+                  var render_items = [{"docid":"bd4836e8-4d48-466d-9d39-bc29b982bcc5","root_ids":["1003"],"roots":{"1003":"2c003038-0062-480b-9608-de7f19860769"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
